@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31F145EAED5B20687AC5BD39 /* libPods-DrawBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC75DF9DD0E6B23959A719 /* libPods-DrawBoard.a */; };
+		EB2CAF6C1EF3CF2B00A8DDBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAF6B1EF3CF2B00A8DDBC /* main.m */; };
+		EB2CAF6F1EF3CF2B00A8DDBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAF6E1EF3CF2B00A8DDBC /* AppDelegate.m */; };
+		EB2CAF751EF3CF2B00A8DDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2CAF731EF3CF2B00A8DDBC /* Main.storyboard */; };
+		EB2CAF781EF3CF2B00A8DDBC /* DrawBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAF761EF3CF2B00A8DDBC /* DrawBoard.xcdatamodeld */; };
+		EB2CAF7A1EF3CF2B00A8DDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2CAF791EF3CF2B00A8DDBC /* Assets.xcassets */; };
+		EB2CAF7D1EF3CF2B00A8DDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2CAF7B1EF3CF2B00A8DDBC /* LaunchScreen.storyboard */; };
+		EB2CAF881EF3CF2B00A8DDBC /* DrawBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAF871EF3CF2B00A8DDBC /* DrawBoardTests.m */; };
+		EB2CAF931EF3CF2B00A8DDBC /* DrawBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAF921EF3CF2B00A8DDBC /* DrawBoardUITests.m */; };
+		EB2CAFC21EF3D13900A8DDBC /* ADDCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFA31EF3D13900A8DDBC /* ADDCommandInfo.m */; };
+		EB2CAFC31EF3D13900A8DDBC /* CLEARCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFA51EF3D13900A8DDBC /* CLEARCommandInfo.m */; };
+		EB2CAFC41EF3D13900A8DDBC /* CommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFA71EF3D13900A8DDBC /* CommandInfo.m */; };
+		EB2CAFC51EF3D13900A8DDBC /* ENDCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFA91EF3D13900A8DDBC /* ENDCommandInfo.m */; };
+		EB2CAFC61EF3D13900A8DDBC /* INITCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFAB1EF3D13900A8DDBC /* INITCommandInfo.m */; };
+		EB2CAFC71EF3D13900A8DDBC /* POPCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFAD1EF3D13900A8DDBC /* POPCommandInfo.m */; };
+		EB2CAFC81EF3D13900A8DDBC /* RMVCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFAF1EF3D13900A8DDBC /* RMVCommandInfo.m */; };
+		EB2CAFC91EF3D13900A8DDBC /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB21EF3D13900A8DDBC /* Command.m */; };
+		EB2CAFCA1EF3D13900A8DDBC /* CommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB41EF3D13900A8DDBC /* CommandManager.m */; };
+		EB2CAFCB1EF3D13900A8DDBC /* ReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB61EF3D13900A8DDBC /* ReplayManager.m */; };
+		EB2CAFCC1EF3D13900A8DDBC /* DrawDebugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB91EF3D13900A8DDBC /* DrawDebugVC.m */; };
+		EB2CAFCD1EF3D13900A8DDBC /* DrawingboardScoll.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFBB1EF3D13900A8DDBC /* DrawingboardScoll.m */; };
+		EB2CAFCE1EF3D13900A8DDBC /* DrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFBD1EF3D13900A8DDBC /* DrawPath.m */; };
+		EB2CAFCF1EF3D13900A8DDBC /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFBF1EF3D13900A8DDBC /* DrawView.m */; };
+		EB2CAFD01EF3D13900A8DDBC /* ZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFC11EF3D13900A8DDBC /* ZoomView.m */; };
+		EB2CAFF81EF3D21100A8DDBC /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFD31EF3D21000A8DDBC /* NSArray+JSONString.m */; };
+		EB2CAFF91EF3D21100A8DDBC /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFD51EF3D21000A8DDBC /* NSBundle+Extension.m */; };
+		EB2CAFFA1EF3D21100A8DDBC /* NSNotificationCenter+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFD81EF3D21100A8DDBC /* NSNotificationCenter+Extension.m */; };
+		EB2CAFFC1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFDD1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.m */; };
+		EB2CAFFD1EF3D21100A8DDBC /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFDF1EF3D21100A8DDBC /* UIButton+Extension.m */; };
+		EB2CAFFE1EF3D21100A8DDBC /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFE11EF3D21100A8DDBC /* UIColor+Extension.m */; };
+		EB2CAFFF1EF3D21100A8DDBC /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFE31EF3D21100A8DDBC /* UIDevice+Extension.m */; };
+		EB2CB0001EF3D21100A8DDBC /* UIFont+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFE51EF3D21100A8DDBC /* UIFont+Extension.m */; };
+		EB2CB0011EF3D21100A8DDBC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFE71EF3D21100A8DDBC /* UIImage+Extension.m */; };
+		EB2CB0021EF3D21100A8DDBC /* UIKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFE91EF3D21100A8DDBC /* UIKitExtensions.m */; };
+		EB2CB0031EF3D21100A8DDBC /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFEB1EF3D21100A8DDBC /* UILabel+Extension.m */; };
+		EB2CB0041EF3D21100A8DDBC /* UINavigationController+GONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFED1EF3D21100A8DDBC /* UINavigationController+GONavigationController.m */; };
+		EB2CB0051EF3D21100A8DDBC /* UIScreen+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFEF1EF3D21100A8DDBC /* UIScreen+Extension.m */; };
+		EB2CB0061EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF11EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.m */; };
+		EB2CB0071EF3D21100A8DDBC /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF31EF3D21100A8DDBC /* UITabBar+badge.m */; };
+		EB2CB0081EF3D21100A8DDBC /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF51EF3D21100A8DDBC /* UITextField+Extension.m */; };
+		EB2CB0091EF3D21100A8DDBC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF71EF3D21100A8DDBC /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB2CAF841EF3CF2B00A8DDBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2CAF5F1EF3CF2B00A8DDBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2CAF661EF3CF2B00A8DDBC;
+			remoteInfo = DrawBoard;
+		};
+		EB2CAF8F1EF3CF2B00A8DDBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2CAF5F1EF3CF2B00A8DDBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2CAF661EF3CF2B00A8DDBC;
+			remoteInfo = DrawBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EAD24F08AB58F842B2EFC5A /* Pods-DrawBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawBoard/Pods-DrawBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		5AAC75DF9DD0E6B23959A719 /* libPods-DrawBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DrawBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B7775347829403E2EF1C09D /* Pods-DrawBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawBoard/Pods-DrawBoard.release.xcconfig"; sourceTree = "<group>"; };
+		EB2CAF671EF3CF2B00A8DDBC /* DrawBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2CAF6B1EF3CF2B00A8DDBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB2CAF6D1EF3CF2B00A8DDBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB2CAF6E1EF3CF2B00A8DDBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB2CAF741EF3CF2B00A8DDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB2CAF771EF3CF2B00A8DDBC /* DrawBoard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawBoard.xcdatamodel; sourceTree = "<group>"; };
+		EB2CAF791EF3CF2B00A8DDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB2CAF7C1EF3CF2B00A8DDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB2CAF7E1EF3CF2B00A8DDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2CAF831EF3CF2B00A8DDBC /* DrawBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2CAF871EF3CF2B00A8DDBC /* DrawBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawBoardTests.m; sourceTree = "<group>"; };
+		EB2CAF891EF3CF2B00A8DDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2CAF8E1EF3CF2B00A8DDBC /* DrawBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2CAF921EF3CF2B00A8DDBC /* DrawBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawBoardUITests.m; sourceTree = "<group>"; };
+		EB2CAF941EF3CF2B00A8DDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2CAFA21EF3D13900A8DDBC /* ADDCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDCommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFA31EF3D13900A8DDBC /* ADDCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDCommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFA41EF3D13900A8DDBC /* CLEARCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEARCommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFA51EF3D13900A8DDBC /* CLEARCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEARCommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFA61EF3D13900A8DDBC /* CommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFA71EF3D13900A8DDBC /* CommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFA81EF3D13900A8DDBC /* ENDCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENDCommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFA91EF3D13900A8DDBC /* ENDCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENDCommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFAA1EF3D13900A8DDBC /* INITCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INITCommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFAB1EF3D13900A8DDBC /* INITCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INITCommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFAC1EF3D13900A8DDBC /* POPCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPCommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFAD1EF3D13900A8DDBC /* POPCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPCommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFAE1EF3D13900A8DDBC /* RMVCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMVCommandInfo.h; sourceTree = "<group>"; };
+		EB2CAFAF1EF3D13900A8DDBC /* RMVCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMVCommandInfo.m; sourceTree = "<group>"; };
+		EB2CAFB11EF3D13900A8DDBC /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		EB2CAFB21EF3D13900A8DDBC /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		EB2CAFB31EF3D13900A8DDBC /* CommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
+		EB2CAFB41EF3D13900A8DDBC /* CommandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandManager.m; sourceTree = "<group>"; };
+		EB2CAFB51EF3D13900A8DDBC /* ReplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplayManager.h; sourceTree = "<group>"; };
+		EB2CAFB61EF3D13900A8DDBC /* ReplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplayManager.m; sourceTree = "<group>"; };
+		EB2CAFB81EF3D13900A8DDBC /* DrawDebugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawDebugVC.h; sourceTree = "<group>"; };
+		EB2CAFB91EF3D13900A8DDBC /* DrawDebugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawDebugVC.m; sourceTree = "<group>"; };
+		EB2CAFBA1EF3D13900A8DDBC /* DrawingboardScoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingboardScoll.h; sourceTree = "<group>"; };
+		EB2CAFBB1EF3D13900A8DDBC /* DrawingboardScoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingboardScoll.m; sourceTree = "<group>"; };
+		EB2CAFBC1EF3D13900A8DDBC /* DrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPath.h; sourceTree = "<group>"; };
+		EB2CAFBD1EF3D13900A8DDBC /* DrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPath.m; sourceTree = "<group>"; };
+		EB2CAFBE1EF3D13900A8DDBC /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		EB2CAFBF1EF3D13900A8DDBC /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		EB2CAFC01EF3D13900A8DDBC /* ZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomView.h; sourceTree = "<group>"; };
+		EB2CAFC11EF3D13900A8DDBC /* ZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomView.m; sourceTree = "<group>"; };
+		EB2CAFD21EF3D21000A8DDBC /* NSArray+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONString.h"; sourceTree = "<group>"; };
+		EB2CAFD31EF3D21000A8DDBC /* NSArray+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONString.m"; sourceTree = "<group>"; };
+		EB2CAFD41EF3D21000A8DDBC /* NSBundle+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFD51EF3D21000A8DDBC /* NSBundle+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFD61EF3D21000A8DDBC /* NSFoundationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFoundationExtension.h; sourceTree = "<group>"; };
+		EB2CAFD71EF3D21000A8DDBC /* NSNotificationCenter+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFD81EF3D21100A8DDBC /* NSNotificationCenter+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFD91EF3D21100A8DDBC /* NSPath+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPath+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFDC1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SupportedInterfaceOrientations.h"; sourceTree = "<group>"; };
+		EB2CAFDD1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SupportedInterfaceOrientations.m"; sourceTree = "<group>"; };
+		EB2CAFDE1EF3D21100A8DDBC /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFDF1EF3D21100A8DDBC /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFE01EF3D21100A8DDBC /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFE11EF3D21100A8DDBC /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFE21EF3D21100A8DDBC /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFE31EF3D21100A8DDBC /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFE41EF3D21100A8DDBC /* UIFont+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFE51EF3D21100A8DDBC /* UIFont+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFE61EF3D21100A8DDBC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFE71EF3D21100A8DDBC /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFE81EF3D21100A8DDBC /* UIKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitExtensions.h; sourceTree = "<group>"; };
+		EB2CAFE91EF3D21100A8DDBC /* UIKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitExtensions.m; sourceTree = "<group>"; };
+		EB2CAFEA1EF3D21100A8DDBC /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFEB1EF3D21100A8DDBC /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFEC1EF3D21100A8DDBC /* UINavigationController+GONavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+GONavigationController.h"; sourceTree = "<group>"; };
+		EB2CAFED1EF3D21100A8DDBC /* UINavigationController+GONavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+GONavigationController.m"; sourceTree = "<group>"; };
+		EB2CAFEE1EF3D21100A8DDBC /* UIScreen+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFEF1EF3D21100A8DDBC /* UIScreen+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFF01EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		EB2CAFF11EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		EB2CAFF21EF3D21100A8DDBC /* UITabBar+badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+badge.h"; sourceTree = "<group>"; };
+		EB2CAFF31EF3D21100A8DDBC /* UITabBar+badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+badge.m"; sourceTree = "<group>"; };
+		EB2CAFF41EF3D21100A8DDBC /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFF51EF3D21100A8DDBC /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
+		EB2CAFF61EF3D21100A8DDBC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		EB2CAFF71EF3D21100A8DDBC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB2CAF641EF3CF2B00A8DDBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F145EAED5B20687AC5BD39 /* libPods-DrawBoard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2CAF801EF3CF2B00A8DDBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2CAF8B1EF3CF2B00A8DDBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F79DBA38026A9656F0885EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EAD24F08AB58F842B2EFC5A /* Pods-DrawBoard.debug.xcconfig */,
+				6B7775347829403E2EF1C09D /* Pods-DrawBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB2CAF5E1EF3CF2B00A8DDBC = {
+			isa = PBXGroup;
+			children = (
+				EB2CAF691EF3CF2B00A8DDBC /* DrawBoard */,
+				EB2CAF861EF3CF2B00A8DDBC /* DrawBoardTests */,
+				EB2CAF911EF3CF2B00A8DDBC /* DrawBoardUITests */,
+				EB2CAF681EF3CF2B00A8DDBC /* Products */,
+				7F79DBA38026A9656F0885EE /* Pods */,
+				FC9C9AA68D280B69D71EB5D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB2CAF681EF3CF2B00A8DDBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAF671EF3CF2B00A8DDBC /* DrawBoard.app */,
+				EB2CAF831EF3CF2B00A8DDBC /* DrawBoardTests.xctest */,
+				EB2CAF8E1EF3CF2B00A8DDBC /* DrawBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB2CAF691EF3CF2B00A8DDBC /* DrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAFD11EF3D21000A8DDBC /* Categories */,
+				EB2CAFA01EF3D13900A8DDBC /* Drawingboard */,
+				EB2CAF6D1EF3CF2B00A8DDBC /* AppDelegate.h */,
+				EB2CAF6E1EF3CF2B00A8DDBC /* AppDelegate.m */,
+				EB2CAF731EF3CF2B00A8DDBC /* Main.storyboard */,
+				EB2CAF791EF3CF2B00A8DDBC /* Assets.xcassets */,
+				EB2CAF7B1EF3CF2B00A8DDBC /* LaunchScreen.storyboard */,
+				EB2CAF7E1EF3CF2B00A8DDBC /* Info.plist */,
+				EB2CAF761EF3CF2B00A8DDBC /* DrawBoard.xcdatamodeld */,
+				EB2CAF6A1EF3CF2B00A8DDBC /* Supporting Files */,
+			);
+			path = DrawBoard;
+			sourceTree = "<group>";
+		};
+		EB2CAF6A1EF3CF2B00A8DDBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAF6B1EF3CF2B00A8DDBC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB2CAF861EF3CF2B00A8DDBC /* DrawBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAF871EF3CF2B00A8DDBC /* DrawBoardTests.m */,
+				EB2CAF891EF3CF2B00A8DDBC /* Info.plist */,
+			);
+			path = DrawBoardTests;
+			sourceTree = "<group>";
+		};
+		EB2CAF911EF3CF2B00A8DDBC /* DrawBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAF921EF3CF2B00A8DDBC /* DrawBoardUITests.m */,
+				EB2CAF941EF3CF2B00A8DDBC /* Info.plist */,
+			);
+			path = DrawBoardUITests;
+			sourceTree = "<group>";
+		};
+		EB2CAFA01EF3D13900A8DDBC /* Drawingboard */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAFA11EF3D13900A8DDBC /* Command */,
+				EB2CAFB01EF3D13900A8DDBC /* Manager */,
+				EB2CAFB71EF3D13900A8DDBC /* View */,
+			);
+			path = Drawingboard;
+			sourceTree = "<group>";
+		};
+		EB2CAFA11EF3D13900A8DDBC /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAFA21EF3D13900A8DDBC /* ADDCommandInfo.h */,
+				EB2CAFA31EF3D13900A8DDBC /* ADDCommandInfo.m */,
+				EB2CAFA41EF3D13900A8DDBC /* CLEARCommandInfo.h */,
+				EB2CAFA51EF3D13900A8DDBC /* CLEARCommandInfo.m */,
+				EB2CAFA61EF3D13900A8DDBC /* CommandInfo.h */,
+				EB2CAFA71EF3D13900A8DDBC /* CommandInfo.m */,
+				EB2CAFA81EF3D13900A8DDBC /* ENDCommandInfo.h */,
+				EB2CAFA91EF3D13900A8DDBC /* ENDCommandInfo.m */,
+				EB2CAFAA1EF3D13900A8DDBC /* INITCommandInfo.h */,
+				EB2CAFAB1EF3D13900A8DDBC /* INITCommandInfo.m */,
+				EB2CAFAC1EF3D13900A8DDBC /* POPCommandInfo.h */,
+				EB2CAFAD1EF3D13900A8DDBC /* POPCommandInfo.m */,
+				EB2CAFAE1EF3D13900A8DDBC /* RMVCommandInfo.h */,
+				EB2CAFAF1EF3D13900A8DDBC /* RMVCommandInfo.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		EB2CAFB01EF3D13900A8DDBC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAFB11EF3D13900A8DDBC /* Command.h */,
+				EB2CAFB21EF3D13900A8DDBC /* Command.m */,
+				EB2CAFB31EF3D13900A8DDBC /* CommandManager.h */,
+				EB2CAFB41EF3D13900A8DDBC /* CommandManager.m */,
+				EB2CAFB51EF3D13900A8DDBC /* ReplayManager.h */,
+				EB2CAFB61EF3D13900A8DDBC /* ReplayManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EB2CAFB71EF3D13900A8DDBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAFB81EF3D13900A8DDBC /* DrawDebugVC.h */,
+				EB2CAFB91EF3D13900A8DDBC /* DrawDebugVC.m */,
+				EB2CAFBA1EF3D13900A8DDBC /* DrawingboardScoll.h */,
+				EB2CAFBB1EF3D13900A8DDBC /* DrawingboardScoll.m */,
+				EB2CAFBC1EF3D13900A8DDBC /* DrawPath.h */,
+				EB2CAFBD1EF3D13900A8DDBC /* DrawPath.m */,
+				EB2CAFBE1EF3D13900A8DDBC /* DrawView.h */,
+				EB2CAFBF1EF3D13900A8DDBC /* DrawView.m */,
+				EB2CAFC01EF3D13900A8DDBC /* ZoomView.h */,
+				EB2CAFC11EF3D13900A8DDBC /* ZoomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2CAFD11EF3D21000A8DDBC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CAFD21EF3D21000A8DDBC /* NSArray+JSONString.h */,
+				EB2CAFD31EF3D21000A8DDBC /* NSArray+JSONString.m */,
+				EB2CAFD41EF3D21000A8DDBC /* NSBundle+Extension.h */,
+				EB2CAFD51EF3D21000A8DDBC /* NSBundle+Extension.m */,
+				EB2CAFD61EF3D21000A8DDBC /* NSFoundationExtension.h */,
+				EB2CAFD71EF3D21000A8DDBC /* NSNotificationCenter+Extension.h */,
+				EB2CAFD81EF3D21100A8DDBC /* NSNotificationCenter+Extension.m */,
+				EB2CAFD91EF3D21100A8DDBC /* NSPath+Extension.h */,
+				EB2CAFDC1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.h */,
+				EB2CAFDD1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.m */,
+				EB2CAFDE1EF3D21100A8DDBC /* UIButton+Extension.h */,
+				EB2CAFDF1EF3D21100A8DDBC /* UIButton+Extension.m */,
+				EB2CAFE01EF3D21100A8DDBC /* UIColor+Extension.h */,
+				EB2CAFE11EF3D21100A8DDBC /* UIColor+Extension.m */,
+				EB2CAFE21EF3D21100A8DDBC /* UIDevice+Extension.h */,
+				EB2CAFE31EF3D21100A8DDBC /* UIDevice+Extension.m */,
+				EB2CAFE41EF3D21100A8DDBC /* UIFont+Extension.h */,
+				EB2CAFE51EF3D21100A8DDBC /* UIFont+Extension.m */,
+				EB2CAFE61EF3D21100A8DDBC /* UIImage+Extension.h */,
+				EB2CAFE71EF3D21100A8DDBC /* UIImage+Extension.m */,
+				EB2CAFE81EF3D21100A8DDBC /* UIKitExtensions.h */,
+				EB2CAFE91EF3D21100A8DDBC /* UIKitExtensions.m */,
+				EB2CAFEA1EF3D21100A8DDBC /* UILabel+Extension.h */,
+				EB2CAFEB1EF3D21100A8DDBC /* UILabel+Extension.m */,
+				EB2CAFEC1EF3D21100A8DDBC /* UINavigationController+GONavigationController.h */,
+				EB2CAFED1EF3D21100A8DDBC /* UINavigationController+GONavigationController.m */,
+				EB2CAFEE1EF3D21100A8DDBC /* UIScreen+Extension.h */,
+				EB2CAFEF1EF3D21100A8DDBC /* UIScreen+Extension.m */,
+				EB2CAFF01EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.h */,
+				EB2CAFF11EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.m */,
+				EB2CAFF21EF3D21100A8DDBC /* UITabBar+badge.h */,
+				EB2CAFF31EF3D21100A8DDBC /* UITabBar+badge.m */,
+				EB2CAFF41EF3D21100A8DDBC /* UITextField+Extension.h */,
+				EB2CAFF51EF3D21100A8DDBC /* UITextField+Extension.m */,
+				EB2CAFF61EF3D21100A8DDBC /* UIView+Extension.h */,
+				EB2CAFF71EF3D21100A8DDBC /* UIView+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FC9C9AA68D280B69D71EB5D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AAC75DF9DD0E6B23959A719 /* libPods-DrawBoard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB2CAF661EF3CF2B00A8DDBC /* DrawBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2CAF971EF3CF2B00A8DDBC /* Build configuration list for PBXNativeTarget "DrawBoard" */;
+			buildPhases = (
+				635354569370918CBA493753 /* [CP] Check Pods Manifest.lock */,
+				EB2CAF631EF3CF2B00A8DDBC /* Sources */,
+				EB2CAF641EF3CF2B00A8DDBC /* Frameworks */,
+				EB2CAF651EF3CF2B00A8DDBC /* Resources */,
+				8919CB76CE44A9DF0A446459 /* [CP] Embed Pods Frameworks */,
+				FC0B758493A7457C55AA06E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawBoard;
+			productName = DrawBoard;
+			productReference = EB2CAF671EF3CF2B00A8DDBC /* DrawBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB2CAF821EF3CF2B00A8DDBC /* DrawBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2CAF9A1EF3CF2B00A8DDBC /* Build configuration list for PBXNativeTarget "DrawBoardTests" */;
+			buildPhases = (
+				EB2CAF7F1EF3CF2B00A8DDBC /* Sources */,
+				EB2CAF801EF3CF2B00A8DDBC /* Frameworks */,
+				EB2CAF811EF3CF2B00A8DDBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2CAF851EF3CF2B00A8DDBC /* PBXTargetDependency */,
+			);
+			name = DrawBoardTests;
+			productName = DrawBoardTests;
+			productReference = EB2CAF831EF3CF2B00A8DDBC /* DrawBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB2CAF8D1EF3CF2B00A8DDBC /* DrawBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2CAF9D1EF3CF2B00A8DDBC /* Build configuration list for PBXNativeTarget "DrawBoardUITests" */;
+			buildPhases = (
+				EB2CAF8A1EF3CF2B00A8DDBC /* Sources */,
+				EB2CAF8B1EF3CF2B00A8DDBC /* Frameworks */,
+				EB2CAF8C1EF3CF2B00A8DDBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2CAF901EF3CF2B00A8DDBC /* PBXTargetDependency */,
+			);
+			name = DrawBoardUITests;
+			productName = DrawBoardUITests;
+			productReference = EB2CAF8E1EF3CF2B00A8DDBC /* DrawBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB2CAF5F1EF3CF2B00A8DDBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.yqj.guoxiangyang;
+				TargetAttributes = {
+					EB2CAF661EF3CF2B00A8DDBC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 47YU9DBWP5;
+						ProvisioningStyle = Automatic;
+					};
+					EB2CAF821EF3CF2B00A8DDBC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB2CAF661EF3CF2B00A8DDBC;
+					};
+					EB2CAF8D1EF3CF2B00A8DDBC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB2CAF661EF3CF2B00A8DDBC;
+					};
+				};
+			};
+			buildConfigurationList = EB2CAF621EF3CF2B00A8DDBC /* Build configuration list for PBXProject "DrawBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB2CAF5E1EF3CF2B00A8DDBC;
+			productRefGroup = EB2CAF681EF3CF2B00A8DDBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB2CAF661EF3CF2B00A8DDBC /* DrawBoard */,
+				EB2CAF821EF3CF2B00A8DDBC /* DrawBoardTests */,
+				EB2CAF8D1EF3CF2B00A8DDBC /* DrawBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB2CAF651EF3CF2B00A8DDBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2CAF7D1EF3CF2B00A8DDBC /* LaunchScreen.storyboard in Resources */,
+				EB2CAF7A1EF3CF2B00A8DDBC /* Assets.xcassets in Resources */,
+				EB2CAF751EF3CF2B00A8DDBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2CAF811EF3CF2B00A8DDBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2CAF8C1EF3CF2B00A8DDBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		635354569370918CBA493753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8919CB76CE44A9DF0A446459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawBoard/Pods-DrawBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0B758493A7457C55AA06E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawBoard/Pods-DrawBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB2CAF631EF3CF2B00A8DDBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2CAFFD1EF3D21100A8DDBC /* UIButton+Extension.m in Sources */,
+				EB2CAF781EF3CF2B00A8DDBC /* DrawBoard.xcdatamodeld in Sources */,
+				EB2CAFC81EF3D13900A8DDBC /* RMVCommandInfo.m in Sources */,
+				EB2CAFC41EF3D13900A8DDBC /* CommandInfo.m in Sources */,
+				EB2CAFCE1EF3D13900A8DDBC /* DrawPath.m in Sources */,
+				EB2CAFFE1EF3D21100A8DDBC /* UIColor+Extension.m in Sources */,
+				EB2CB0071EF3D21100A8DDBC /* UITabBar+badge.m in Sources */,
+				EB2CAFC31EF3D13900A8DDBC /* CLEARCommandInfo.m in Sources */,
+				EB2CB0091EF3D21100A8DDBC /* UIView+Extension.m in Sources */,
+				EB2CAFCA1EF3D13900A8DDBC /* CommandManager.m in Sources */,
+				EB2CAFFA1EF3D21100A8DDBC /* NSNotificationCenter+Extension.m in Sources */,
+				EB2CAFC71EF3D13900A8DDBC /* POPCommandInfo.m in Sources */,
+				EB2CAFCF1EF3D13900A8DDBC /* DrawView.m in Sources */,
+				EB2CAFCC1EF3D13900A8DDBC /* DrawDebugVC.m in Sources */,
+				EB2CAFF91EF3D21100A8DDBC /* NSBundle+Extension.m in Sources */,
+				EB2CB0021EF3D21100A8DDBC /* UIKitExtensions.m in Sources */,
+				EB2CAF6F1EF3CF2B00A8DDBC /* AppDelegate.m in Sources */,
+				EB2CB0041EF3D21100A8DDBC /* UINavigationController+GONavigationController.m in Sources */,
+				EB2CB0011EF3D21100A8DDBC /* UIImage+Extension.m in Sources */,
+				EB2CAFFF1EF3D21100A8DDBC /* UIDevice+Extension.m in Sources */,
+				EB2CAFC91EF3D13900A8DDBC /* Command.m in Sources */,
+				EB2CB0051EF3D21100A8DDBC /* UIScreen+Extension.m in Sources */,
+				EB2CAFC61EF3D13900A8DDBC /* INITCommandInfo.m in Sources */,
+				EB2CAFFC1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.m in Sources */,
+				EB2CAFCB1EF3D13900A8DDBC /* ReplayManager.m in Sources */,
+				EB2CB0031EF3D21100A8DDBC /* UILabel+Extension.m in Sources */,
+				EB2CAFD01EF3D13900A8DDBC /* ZoomView.m in Sources */,
+				EB2CAFF81EF3D21100A8DDBC /* NSArray+JSONString.m in Sources */,
+				EB2CB0081EF3D21100A8DDBC /* UITextField+Extension.m in Sources */,
+				EB2CAFC51EF3D13900A8DDBC /* ENDCommandInfo.m in Sources */,
+				EB2CAFC21EF3D13900A8DDBC /* ADDCommandInfo.m in Sources */,
+				EB2CB0061EF3D21100A8DDBC /* UIScrollView+EmptyDataSet.m in Sources */,
+				EB2CAF6C1EF3CF2B00A8DDBC /* main.m in Sources */,
+				EB2CB0001EF3D21100A8DDBC /* UIFont+Extension.m in Sources */,
+				EB2CAFCD1EF3D13900A8DDBC /* DrawingboardScoll.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2CAF7F1EF3CF2B00A8DDBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2CAF881EF3CF2B00A8DDBC /* DrawBoardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2CAF8A1EF3CF2B00A8DDBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2CAF931EF3CF2B00A8DDBC /* DrawBoardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB2CAF851EF3CF2B00A8DDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2CAF661EF3CF2B00A8DDBC /* DrawBoard */;
+			targetProxy = EB2CAF841EF3CF2B00A8DDBC /* PBXContainerItemProxy */;
+		};
+		EB2CAF901EF3CF2B00A8DDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2CAF661EF3CF2B00A8DDBC /* DrawBoard */;
+			targetProxy = EB2CAF8F1EF3CF2B00A8DDBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB2CAF731EF3CF2B00A8DDBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2CAF741EF3CF2B00A8DDBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB2CAF7B1EF3CF2B00A8DDBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2CAF7C1EF3CF2B00A8DDBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB2CAF951EF3CF2B00A8DDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB2CAF961EF3CF2B00A8DDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB2CAF981EF3CF2B00A8DDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EAD24F08AB58F842B2EFC5A /* Pods-DrawBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47YU9DBWP5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DrawBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqj.guoxiangyang.DrawBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB2CAF991EF3CF2B00A8DDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7775347829403E2EF1C09D /* Pods-DrawBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47YU9DBWP5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DrawBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqj.guoxiangyang.DrawBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB2CAF9B1EF3CF2B00A8DDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DrawBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqj.guoxiangyang.DrawBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawBoard.app/DrawBoard";
+			};
+			name = Debug;
+		};
+		EB2CAF9C1EF3CF2B00A8DDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DrawBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqj.guoxiangyang.DrawBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawBoard.app/DrawBoard";
+			};
+			name = Release;
+		};
+		EB2CAF9E1EF3CF2B00A8DDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrawBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqj.guoxiangyang.DrawBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DrawBoard;
+			};
+			name = Debug;
+		};
+		EB2CAF9F1EF3CF2B00A8DDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrawBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yqj.guoxiangyang.DrawBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DrawBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB2CAF621EF3CF2B00A8DDBC /* Build configuration list for PBXProject "DrawBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2CAF951EF3CF2B00A8DDBC /* Debug */,
+				EB2CAF961EF3CF2B00A8DDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2CAF971EF3CF2B00A8DDBC /* Build configuration list for PBXNativeTarget "DrawBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2CAF981EF3CF2B00A8DDBC /* Debug */,
+				EB2CAF991EF3CF2B00A8DDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2CAF9A1EF3CF2B00A8DDBC /* Build configuration list for PBXNativeTarget "DrawBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2CAF9B1EF3CF2B00A8DDBC /* Debug */,
+				EB2CAF9C1EF3CF2B00A8DDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2CAF9D1EF3CF2B00A8DDBC /* Build configuration list for PBXNativeTarget "DrawBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2CAF9E1EF3CF2B00A8DDBC /* Debug */,
+				EB2CAF9F1EF3CF2B00A8DDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB2CAF761EF3CF2B00A8DDBC /* DrawBoard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB2CAF771EF3CF2B00A8DDBC /* DrawBoard.xcdatamodel */,
+			);
+			currentVersion = EB2CAF771EF3CF2B00A8DDBC /* DrawBoard.xcdatamodel */;
+			path = DrawBoard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB2CAF5F1EF3CF2B00A8DDBC /* Project object */;
+}
