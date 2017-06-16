@@ -48,6 +48,7 @@
 		EB2CB0071EF3D21100A8DDBC /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF31EF3D21100A8DDBC /* UITabBar+badge.m */; };
 		EB2CB0081EF3D21100A8DDBC /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF51EF3D21100A8DDBC /* UITextField+Extension.m */; };
 		EB2CB0091EF3D21100A8DDBC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFF71EF3D21100A8DDBC /* UIView+Extension.m */; };
+		EB2CB00B1EF3D6CC00A8DDBC /* 命令格式 .html in Resources */ = {isa = PBXBuildFile; fileRef = EB2CB00A1EF3D6CC00A8DDBC /* 命令格式 .html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		EB2CAFF51EF3D21100A8DDBC /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
 		EB2CAFF61EF3D21100A8DDBC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		EB2CAFF71EF3D21100A8DDBC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		EB2CB00A1EF3D6CC00A8DDBC /* 命令格式 .html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "命令格式 .html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 		EB2CAF691EF3CF2B00A8DDBC /* DrawBoard */ = {
 			isa = PBXGroup;
 			children = (
+				EB2CB00A1EF3D6CC00A8DDBC /* 命令格式 .html */,
 				EB2CAFD11EF3D21000A8DDBC /* Categories */,
 				EB2CAFA01EF3D13900A8DDBC /* Drawingboard */,
 				EB2CAF6D1EF3CF2B00A8DDBC /* AppDelegate.h */,
@@ -477,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2CAF7D1EF3CF2B00A8DDBC /* LaunchScreen.storyboard in Resources */,
+				EB2CB00B1EF3D6CC00A8DDBC /* 命令格式 .html in Resources */,
 				EB2CAF7A1EF3CF2B00A8DDBC /* Assets.xcassets in Resources */,
 				EB2CAF751EF3CF2B00A8DDBC /* Main.storyboard in Resources */,
 			);
