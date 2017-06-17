@@ -23,7 +23,6 @@
 		EB2CAFC61EF3D13900A8DDBC /* INITCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFAB1EF3D13900A8DDBC /* INITCommandInfo.m */; };
 		EB2CAFC71EF3D13900A8DDBC /* POPCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFAD1EF3D13900A8DDBC /* POPCommandInfo.m */; };
 		EB2CAFC81EF3D13900A8DDBC /* RMVCommandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFAF1EF3D13900A8DDBC /* RMVCommandInfo.m */; };
-		EB2CAFC91EF3D13900A8DDBC /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB21EF3D13900A8DDBC /* Command.m */; };
 		EB2CAFCA1EF3D13900A8DDBC /* CommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB41EF3D13900A8DDBC /* CommandManager.m */; };
 		EB2CAFCB1EF3D13900A8DDBC /* ReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB61EF3D13900A8DDBC /* ReplayManager.m */; };
 		EB2CAFCC1EF3D13900A8DDBC /* DrawDebugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CAFB91EF3D13900A8DDBC /* DrawDebugVC.m */; };
@@ -101,8 +100,6 @@
 		EB2CAFAD1EF3D13900A8DDBC /* POPCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPCommandInfo.m; sourceTree = "<group>"; };
 		EB2CAFAE1EF3D13900A8DDBC /* RMVCommandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMVCommandInfo.h; sourceTree = "<group>"; };
 		EB2CAFAF1EF3D13900A8DDBC /* RMVCommandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMVCommandInfo.m; sourceTree = "<group>"; };
-		EB2CAFB11EF3D13900A8DDBC /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
-		EB2CAFB21EF3D13900A8DDBC /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		EB2CAFB31EF3D13900A8DDBC /* CommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
 		EB2CAFB41EF3D13900A8DDBC /* CommandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandManager.m; sourceTree = "<group>"; };
 		EB2CAFB51EF3D13900A8DDBC /* ReplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplayManager.h; sourceTree = "<group>"; };
@@ -291,8 +288,6 @@
 		EB2CAFB01EF3D13900A8DDBC /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				EB2CAFB11EF3D13900A8DDBC /* Command.h */,
-				EB2CAFB21EF3D13900A8DDBC /* Command.m */,
 				EB2CAFB31EF3D13900A8DDBC /* CommandManager.h */,
 				EB2CAFB41EF3D13900A8DDBC /* CommandManager.m */,
 				EB2CAFB51EF3D13900A8DDBC /* ReplayManager.h */,
@@ -575,7 +570,6 @@
 				EB2CB0041EF3D21100A8DDBC /* UINavigationController+GONavigationController.m in Sources */,
 				EB2CB0011EF3D21100A8DDBC /* UIImage+Extension.m in Sources */,
 				EB2CAFFF1EF3D21100A8DDBC /* UIDevice+Extension.m in Sources */,
-				EB2CAFC91EF3D13900A8DDBC /* Command.m in Sources */,
 				EB2CB0051EF3D21100A8DDBC /* UIScreen+Extension.m in Sources */,
 				EB2CAFC61EF3D13900A8DDBC /* INITCommandInfo.m in Sources */,
 				EB2CAFFC1EF3D21100A8DDBC /* UIAlertController+SupportedInterfaceOrientations.m in Sources */,
